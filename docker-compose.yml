@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  nginx:
+    image: sauravskumar/nginx
+    container_name: atmed_nginx
+    networks:
+      - coupons_default
+    ports:
+      - "80:80"
+
+networks:
+  coupons_default:
+    external: true

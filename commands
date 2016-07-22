@@ -1,0 +1,7 @@
+docker build -t sauravskumar/nginx .
+
+docker run -d -p 80:80 -t nginx
+
+docker run --name at_nginx -p 80:80 --rm --net=coupons_default sauravskumar/nginx
+
+docker rm sauravskumar/at_nginx && docker rmi sauravskumar/at_nginx
