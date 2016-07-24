@@ -2,6 +2,7 @@ version: '2'
 
 services:
   atmed_nginx:
+    build: .
     image: sauravskumar/nginx
     container_name: atmed_nginx
     networks:
