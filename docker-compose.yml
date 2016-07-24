@@ -5,10 +5,15 @@ services:
     image: sauravskumar/nginx
     container_name: atmed_nginx
     networks:
+      - trains_default
       - coupons_default
+    volumes:
+      - /etc/nginx/ssl/atmed_co:/cert
     ports:
       - "80:80"
 
 networks:
   coupons_default:
+    external: true
+  trains_default:
     external: true
