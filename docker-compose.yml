@@ -11,6 +11,7 @@ services:
       - /etc/nginx/ssl/atmed_co:/cert
     ports:
       - "80:80"
+      - "443:443"
 
 networks:
   coupons_default:
