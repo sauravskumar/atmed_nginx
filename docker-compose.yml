@@ -3,7 +3,7 @@ version: '2'
 services:
   atmed_nginx:
     build: .
-    image: sauravskumar/nginx
+    image: sauravskumar/atmed_nginx
     container_name: atmed_nginx
     networks:
       - trains_default
