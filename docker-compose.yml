@@ -9,6 +9,7 @@ services:
       - trains_default
       - coupons_default
       - atmedindex_default
+      - tutorial_default
     volumes:
       - /etc/nginx/ssl/atmed_co:/cert
     ports:
@@ -21,4 +22,6 @@ networks:
   trains_default:
     external: true
   atmedindex_default:
+    external: true
+  tutorial_default:
     external: true
