@@ -10,6 +10,7 @@ services:
       - coupons_default
       - atmedindex_default
       - tutorial_default
+      - sportsof_default
     volumes:
       - /etc/nginx/ssl/atmed_co:/cert
     ports:
