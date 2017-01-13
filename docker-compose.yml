@@ -26,3 +26,5 @@ networks:
     external: true
   tutorial_default:
     external: true
+  sportsof_default:
+    external: true
