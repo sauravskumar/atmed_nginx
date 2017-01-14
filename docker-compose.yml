@@ -11,7 +11,6 @@ services:
       - atmedindex_default
       - tutorial_default
       - sportsof_default
-      - sports2_default
     volumes:
       - /etc/nginx/ssl/atmed_co:/cert
     ports:
@@ -28,6 +27,4 @@ networks:
   tutorial_default:
     external: true
   sportsof_default:
-    external: true
-  sports2_default:
     external: true
