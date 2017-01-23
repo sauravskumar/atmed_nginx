@@ -7,9 +7,6 @@ services:
     container_name: atmed_nginx
     networks:
       - trains_default
-      - coupons_default
-      - atmedindex_default
-      - tutorial_default
       - sportsof_default
     volumes:
       - /etc/nginx/ssl/atmed_co:/cert
@@ -18,13 +15,7 @@ services:
       - "443:443"
 
 networks:
-  coupons_default:
-    external: true
   trains_default:
-    external: true
-  atmedindex_default:
-    external: true
-  tutorial_default:
     external: true
   sportsof_default:
     external: true
